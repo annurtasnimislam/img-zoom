@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import ZoomImage from "./components/ZoomImage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hover over the image to zoom</h1>
+      <ZoomImage src="your-image-url.jpg" alt="Zoomable Image" />
     </div>
   );
-}
+};
 
 export default App;
